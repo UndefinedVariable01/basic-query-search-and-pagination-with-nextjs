@@ -1,0 +1,126 @@
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: var(--primary-content-width);
+    padding-top: 10rem;
+    margin: auto;
+
+    .images {
+        width: 40%;
+        display: flex;
+        gap: 2rem;
+
+        div {
+            width: 50%;
+            height: 550px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &:last-child {
+                margin-top: 5rem;
+            }
+        }
+    }
+
+    .description {
+        width: 40%;
+        margin-top: 3rem;
+
+        h1 {
+            font-weight: var(--semi-bold-font-weight);
+            margin-bottom: 0.5rem;
+            opacity: 0.5;
+        }
+
+        .main-description {
+            font-size: 1.7rem;
+            line-height: 2.4rem;
+            margin: 0;
+            margin-bottom: 3rem;
+        }
+
+        .secondary-description {
+            line-height: 1.6rem;
+            margin-bottom: 3rem;
+        }
+
+        .show-more {
+            font-weight: var(--medium-font-weight);
+            color: #ff4848;
+            display: flex;
+            align-items: center;
+
+            span {
+                width: 100px;
+                height: 2px;
+                background-color: #ff4848;
+                margin-left: 1rem;
+                border-radius: 99px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .about {
+        padding-top: 8rem;
+        gap: 4rem;
+
+        .images {
+            width: 50%;
+            gap: 1.5rem;
+
+            div {
+                height: 500px;
+            }
+        }
+
+        .description {
+            width: 50%;
+
+            .main-description {
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .secondary-description {
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .about {
+        padding: 2rem;
+        padding-top: 5rem;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        .images {
+            width: 100%;
+
+            div {
+                height: 400px;
+            }
+        }
+
+        .description {
+            width: 100%;
+            margin-top: 0;
+
+            .secondary-description {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

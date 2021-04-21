@@ -1,0 +1,34 @@
+.footer {
+    width: var(--primary-content-width);
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    margin: auto;
+
+    .copy-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1.5rem;
+
+        p,
+        a {
+            font-weight: var(--medium-font-weight);
+        }
+
+        p {
+            opacity: var(--light-text-opacity);
+            margin: 0;
+        }
+
+        .links a {
+            color: #ff4848;
+        }
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .footer {
+        padding: 2rem;
+        padding-top: 14rem;
+    }
+}
